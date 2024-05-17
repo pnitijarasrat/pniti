@@ -19,7 +19,6 @@ export default function About() {
     <motion.div className="about-section">
       <Header>About</Header>
       <AboutContent />
-      <AboutGridContent />
     </motion.div>
   );
 }

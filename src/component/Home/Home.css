@@ -35,7 +35,7 @@ nav ul {
 .home-hero {
   color: var(--yellow);
   font-weight: bold;
-  font-size: 2em;
+  font-size: 3em;
   margin-top: 16px;
   opacity: 0;
 }
@@ -59,6 +59,8 @@ nav ul {
 .home-highlight {
   color: var(--yellow);
   font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Oswald";
 }
 @media only screen and (min-width: 749px) {
   nav {

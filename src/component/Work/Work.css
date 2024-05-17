@@ -19,7 +19,6 @@
   top: 0;
   height: 800px;
   margin: auto 0;
-  border: 1px solid green;
 }
 .work-card {
   height: 100vh;
@@ -33,7 +32,7 @@
 }
 
 .work-card-content {
-  background-color: var(--black-2);
+  background-color: var(--black-1);
   border-radius: 10px;
   margin: auto 0;
   padding: 24px 32px;
@@ -53,7 +52,6 @@
 
 .work-sticky {
   height: 500vh;
-  border: 1px solid red;
 }
 
 .work {

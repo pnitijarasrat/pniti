@@ -62,6 +62,7 @@ const MobileNav = ({ closeNav }) => {
               closeNav();
             }}
             key={key}
+            whileHover={{ cursor: "pointer" }}
             className="mobile-nav-li"
           >
             {page.page}

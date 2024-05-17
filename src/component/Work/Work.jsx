@@ -29,7 +29,7 @@ const WorkContent = () => {
         building and crafting.
       </Slide.SlideRight>
 
-      <Slide.SlideLeft className="work-content work-right">
+      <Slide.SlideLeft className="work-content work-right text-right">
         Let's explore <span className="highlight">my previous works.</span>
       </Slide.SlideLeft>
     </motion.div>

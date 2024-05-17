@@ -1,4 +1,33 @@
-.contact-grid-container {
+@import "../../var.css";
+
+.contact-page-grid {
   display: grid;
   gap: 32px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-page-grid-item {
+  padding: 32px;
+  border-radius: 10px;
+  background-color: var(--black-1);
+}
+
+.contact-text-grid {
+  display: grid;
+  grid-template-columns: 80px auto;
+  margin: 8px 0;
+}
+
+.text-contact {
+  grid-column: 1 / span 2;
+}
+
+@media only screen and (min-width: 749px) {
+  .contact-page-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .text-contact {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
 }

@@ -17,7 +17,7 @@ const WorkPage = () => {
           {workContent.map((work, key) => (
             <WorkCard work={work} key={key} />
           ))}
-          <motion.div>Keep Crafting...</motion.div>
+          <motion.div className="flex-center">Keep Crafting...</motion.div>
         </motion.div>
       </motion.div>
 

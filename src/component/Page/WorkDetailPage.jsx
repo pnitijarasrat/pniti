@@ -2,13 +2,16 @@ import "./WorkDetailPage.css";
 import { motion } from "framer-motion";
 import transition from "../UI/Transition";
 import { StaticHeader } from "../UI/Header";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { workContent } from "../Work/Work";
 import Footer from "../Footer/Footer";
+import Button from "../UI/Button";
 
 const WorkDetailPage = () => {
   const { workId } = useParams();
   const work = workContent.filter((work) => workId === work.id)[0];
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -27,6 +30,9 @@ const WorkDetailPage = () => {
             </div>
           </motion.div>
         </motion.div>
+        <div className="flex-center" style={{ marginTop: "64px" }}>
+          <Button onClick={() => navigate(-1)}>Back</Button>
+        </div>
       </motion.div>
       <Footer />{" "}
     </>
