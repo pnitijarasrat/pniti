@@ -48,7 +48,9 @@ const AboutPage = () => {
           <motion.div className="about-me-grid-item">
             <div className="text-center">Download my resume here</div>
             <div className="download-button">
-              <Button>My Resume</Button>
+              <a href="puriwat-resume-2024.pdf" download>
+                <Button>My Resume</Button>
+              </a>
             </div>
           </motion.div>
         </motion.div>

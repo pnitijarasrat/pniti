@@ -12,8 +12,6 @@ import "./About.css";
 import Button from "../UI/Button";
 import { useNavigate } from "react-router-dom";
 
-// TODO: fix cool isn't it animation
-
 export default function About() {
   return (
     <motion.div className="about-section">

@@ -11,8 +11,7 @@ import { Nav } from "./component/Home/Home";
 import WorkDetailPage from "./component/Page/WorkDetailPage";
 import usePreventZoom from "./component/UI/usePreventZoom";
 
-//TODO: mobile navigator
-//TODO: footer content
+// TODO: add works description
 
 function App() {
   const [mobileNav, setMobileNav] = useState(false);

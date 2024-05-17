@@ -29,10 +29,22 @@ const ContactContent = () => {
         </motion.div>
       </motion.div>
       <motion.div className="contact-page-grid-item text-center">
-        <FaLinkedin size={50} />
+        <a
+          href="https://www.linkedin.com/in/p-nitijarasrat/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaLinkedin size={50} />
+        </a>
       </motion.div>
       <motion.div className="contact-page-grid-item text-center">
-        <FaInstagram size={50} />
+        <a
+          href="https://www.instagram.com/qwertyadgsfhzxcvb/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaInstagram size={50} />
+        </a>
       </motion.div>
     </motion.div>
   );
