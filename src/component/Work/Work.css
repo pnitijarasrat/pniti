@@ -19,6 +19,7 @@
   top: 0;
   height: 800px;
   margin: auto 0;
+  border: 1px solid green;
 }
 .work-card {
   height: 100vh;
@@ -52,6 +53,7 @@
 
 .work-sticky {
   height: 500vh;
+  border: 1px solid red;
 }
 
 .work {

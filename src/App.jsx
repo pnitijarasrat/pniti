@@ -9,6 +9,7 @@ import WorkPage from "./component/Page/WorkPage";
 import ContactPage from "./component/Page/ContactPage";
 import { Nav } from "./component/Home/Home";
 import WorkDetailPage from "./component/Page/WorkDetailPage";
+import usePreventZoom from "./component/UI/usePreventZoom";
 
 //TODO: mobile navigator
 //TODO: footer content
@@ -17,22 +18,27 @@ function App() {
   const [mobileNav, setMobileNav] = useState(false);
   const location = useLocation();
 
+  usePreventZoom();
+
   return (
     <>
       <Nav openNav={() => setMobileNav(true)} />
       {mobileNav && <MobileNav closeNav={() => setMobileNav(false)} />}
-      <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          <Route
-            path="/"
-            element={<HomeContent openNav={() => setMobileNav(true)} />}
-          />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/work" element={<WorkPage />} />
-          <Route path="/work/:workId" element={<WorkDetailPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </AnimatePresence>
+
+      <div style={{ zIndex: mobileNav ? "-1" : "1" }}>
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route
+              path="/"
+              element={<HomeContent openNav={() => setMobileNav(true)} />}
+            />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/work" element={<WorkPage />} />
+            <Route path="/work/:workId" element={<WorkDetailPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </AnimatePresence>
+      </div>
     </>
   );
 }

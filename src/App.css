@@ -75,6 +75,7 @@ button {
   align-items: center;
   position: fixed;
   inset: 0 0 0 0;
+  background-color: var(--black-0);
 }
 
 .mobile-nav {

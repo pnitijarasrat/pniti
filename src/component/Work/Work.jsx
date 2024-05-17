@@ -43,7 +43,6 @@ const WorkCard = () => {
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     setScrollProgress(latest);
-    console.log(latest);
   });
 
   const contentWidth = workContent.length * 500 + 32 * (workContent.length - 1);
