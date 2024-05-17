@@ -1,0 +1,91 @@
+@import "../../var.css";
+
+.work-section {
+  width: var(--page-width);
+  margin: var(--page-margin);
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.work-content {
+  font-size: 1.5em;
+}
+
+.work-card-container {
+  position: sticky;
+  top: 0;
+  height: 800px;
+  margin: auto 0;
+}
+.work-card {
+  height: 100vh;
+  display: flex;
+  gap: 32px;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+}
+
+.work-card-content {
+  background-color: var(--black-2);
+  border-radius: 10px;
+  margin: auto 0;
+  padding: 24px 32px;
+  align-items: center;
+  height: 600px;
+  position: relative;
+  width: 90vw;
+}
+.work-card-content:hover .overlay {
+  opacity: 1;
+}
+
+.work-card-content img {
+  justify-self: center;
+  width: 100%;
+}
+
+.work-sticky {
+  height: 500vh;
+}
+
+.work {
+  font-size: 5em;
+  color: var(--black-1);
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.work-button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.work-right {
+  justify-self: end;
+  align-self: end;
+}
+
+.work-footer {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 32px;
+}
+
+.work-joke {
+  text-align: right;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 749px) {
+}

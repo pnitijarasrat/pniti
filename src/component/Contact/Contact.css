@@ -1,0 +1,22 @@
+@import "../../var.css";
+
+.contact-section {
+  width: var(--page-width);
+  margin: var(--page-margin);
+}
+
+.contact-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media only screen and (min-width: 749px) {
+  .contact-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact-grid-container div {
+    align-self: end;
+  }
+}

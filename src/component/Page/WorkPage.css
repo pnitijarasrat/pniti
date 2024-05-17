@@ -1,0 +1,47 @@
+@import "../../var.css";
+
+.work-detail-grid {
+  display: grid;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.work-card-detail-img {
+  position: relative;
+  width: 90vw;
+}
+
+.work-card-detail-img img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.work-card-detail-img:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 749px) {
+  .work-detail-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .work-card-detail-img {
+    width: auto;
+  }
+}

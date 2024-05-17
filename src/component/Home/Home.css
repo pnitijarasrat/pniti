@@ -1,0 +1,65 @@
+@import "../../var.css";
+
+.home-section {
+  width: var(--page-width);
+  margin: auto;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.home-content {
+  margin: 64px 0;
+}
+
+nav {
+  margin: 16px auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: var(--page-width);
+}
+
+nav .logo {
+  width: 80%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  color: var(--white-2);
+}
+
+.home-hero {
+  color: var(--yellow);
+  font-weight: bold;
+  font-size: 3em;
+  margin-top: 16px;
+  opacity: 0;
+}
+
+.home-scroll {
+  margin-top: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.home-none-highlight {
+  font-weight: normal;
+  color: var(--black-3);
+  font-size: 0.8em;
+  width: 100%;
+}
+
+.home-highlight {
+  color: var(--yellow);
+  font-size: 1.5em;
+}
+@media only screen and (min-width: 749px) {
+  nav {
+    margin-top: 32px;
+  }
+}

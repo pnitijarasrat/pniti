@@ -1,0 +1,21 @@
+:root {
+  --black-0: #000000;
+  --black-1: #1a1a1a;
+  --black-2: #656567;
+  --black-3: #98989a;
+  --white-0: #eceff4;
+  --white-1: #e5e9f0;
+  --white-2: #d8dee9;
+  --highlight-0: #8fbcbb;
+  --highlight-1: #88c0d0;
+  --highlight-2: #81a1c1;
+  --highlight-3: #5e81ac;
+  --red: #bf616a;
+  --orange: #d08770;
+  --yellow: #ebcb8b;
+  --green: #a3be8c;
+  --purple: #b48ead;
+  --page-width: min(90vw, 1000px);
+  --page-margin: 64px auto;
+  --special-font: "Bebas Neue";
+}

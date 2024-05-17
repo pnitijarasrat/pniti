@@ -1,0 +1,61 @@
+@import "../../var.css";
+
+.about-me-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.about-me-grid-item {
+  background-color: var(--black-1);
+  padding: 32px;
+  border-radius: 10px;
+}
+
+.bio-grid {
+  display: grid;
+  gap: 16px 48px;
+  grid-template-columns: 20px auto;
+  margin: 8px 0;
+}
+
+.strength-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 10px auto;
+  gap: 32px;
+  margin: 8px 0;
+}
+
+.about-me-highlight {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white-0);
+}
+
+.download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.main-event {
+  color: var(--white-2);
+  font-size: 1.1em;
+}
+
+.sub-event {
+  padding-left: 32px;
+}
+
+@media only screen and (min-width: 749px) {
+  .about-me-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .bio-item {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+}

@@ -1,0 +1,7 @@
+@import "../../var.css";
+
+.footer-section {
+  width: 100vw;
+  text-align: center;
+  margin-bottom: 32px;
+}

@@ -1,0 +1,4 @@
+.contact-grid-container {
+  display: grid;
+  gap: 32px;
+}

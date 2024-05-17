@@ -1,0 +1,23 @@
+.work-detail-page-grid {
+  display: grid;
+  width: 100%;
+  gap: 32px;
+}
+
+.work-detail-grid-img {
+  width: 90vw;
+}
+
+@media only screen and (min-width: 749px) {
+  .work-detail-page-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .work-detail-grid-img {
+    width: 100%;
+  }
+
+  .work-detail-grid-tech {
+    grid-column: 2;
+  }
+}
